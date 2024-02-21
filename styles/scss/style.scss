@@ -1,0 +1,34 @@
+@import "_mixin.scss";
+@import "_variable.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+
+
+// nav-bar
+.nav-bar{
+    background-color: $bluedark;
+}
+
+.nav-item .nav-link{
+    font-family: "telemarine1",sans-serif;
+    color: $white;
+}
+
+.login  {
+    color: $white;
+}
+
+// end nav-bar 
+
+.background-img-acceuil{
+background-position: center;
+background-repeat: no-repeat;
+background-size:contain;
+background-attachment: fixed;
+padding-top: 0;
+padding: 0;
+width: 100%;
+min-height: 100vh;
+}
+
+
+

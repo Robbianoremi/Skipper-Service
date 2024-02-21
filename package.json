@@ -1,0 +1,19 @@
+{
+  "name": "skipperservice",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass -w styles/scss/style.scss styles/css/style.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "boostrap": "^2.0.0",
+    "bootstrap": "^5.3.3"
+  },
+  "devDependencies": {
+    "sass": "^1.71.1"
+  }
+}
