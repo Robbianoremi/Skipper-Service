@@ -4,31 +4,96 @@
 
 
 // nav-bar
-.nav-bar{
+
+.navbar {
     background-color: $bluedark;
 }
+    
 
-.nav-item .nav-link{
+
+.nav-link, .navbar-brand, .h1 {
     font-family: "telemarine1",sans-serif;
     color: $white;
 }
 
-.login  {
+
+   
+
+.login, .navbar-toggler {
     color: $white;
 }
 
-// end nav-bar 
-
-.background-img-acceuil{
-background-position: center;
-background-repeat: no-repeat;
-background-size:contain;
-background-attachment: fixed;
-padding-top: 0;
-padding: 0;
-width: 100%;
-min-height: 100vh;
+.login{
+padding-left: 230px;
 }
 
+
+
+
+
+// end nav-bar 
+
+
+
+
+// acceuil
+
+.bg-img-acceuil {
+    
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+width: 100%;
+min-height: 100vh;
+
+}
+
+.logo{
+    width: 200px;
+    height: 100px;
+}
+
+.btn{
+    font-family: "Daltonemarine",sans-serif;
+
+}
+
+
+
+
+// end acceuil
+
+// a propos
+
+
+.h2{
+    font-family: "telemarine1",sans-serif;
+    color: $orange;
+}
+
+.p-apropos{
+    font-family: "Daltonemarine",sans-serif;
+}
+
+
+
+.container-apropos{
+    background-color: $bluedark;
+   
+}
+
+
+// .bg-img-apropos {
+
+// background-position: center;
+// background-repeat: no-repeat;
+// background-size: cover;
+// background-attachment: fixed;
+// width: 100%;
+// min-height: 100vh;
+// }
+
+// end propos
 
 

@@ -11852,28 +11852,52 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.nav-bar {
+.navbar {
   background-color: #456D92;
 }
 
-.nav-item .nav-link {
+.nav-link, .navbar-brand, .h1 {
   font-family: "telemarine1", sans-serif;
   color: #F5F7F6;
 }
 
-.login {
+.login, .navbar-toggler {
   color: #F5F7F6;
 }
 
-.background-img-acceuil {
+.login {
+  padding-left: 230px;
+}
+
+.bg-img-acceuil {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   background-attachment: fixed;
-  padding-top: 0;
-  padding: 0;
   width: 100%;
   min-height: 100vh;
+}
+
+.logo {
+  width: 200px;
+  height: 100px;
+}
+
+.btn {
+  font-family: "Daltonemarine", sans-serif;
+}
+
+.h2 {
+  font-family: "telemarine1", sans-serif;
+  color: #fd7e14;
+}
+
+.p-apropos {
+  font-family: "Daltonemarine", sans-serif;
+}
+
+.container-apropos {
+  background-color: #456D92;
 }
 
 /*# sourceMappingURL=style.css.map */

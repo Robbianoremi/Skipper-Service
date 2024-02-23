@@ -2,20 +2,26 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Skipper Service</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="styles/css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-   
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles/css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
 
 <body>
-
     <!-- navbar -->
-   
-        <div class="row nav-bar">
-            <div class="col-lg-10">
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand p-1" href="#">Skipper Service</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse ps-3" id="navbarSupportedContent">
                 <ul class="nav nav-tabs">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Acceuil</a>
@@ -36,38 +42,109 @@
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
+                <form class="d-flex ps-2 p-2" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-light" type="submit">Search</button>
+                </form>
 
-            </div>
-            <div class="col-lg-1 text-end login pt-2 ">
-                <a href="#" class="link-light link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover">Login</a>
-            </div>
-            <div class="col-lg-1 text-start pt-2">
-                <a href="#" class="link-light link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover">Sign up</a>
+                <a href="#"
+                    class="link-light link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover login">Login
+                    / Sign up</a>
             </div>
         </div>
-   
+    </nav>
 
-       <!-- end nav-bar -->
+    <!-- end nav-bar -->
 
-       <!-- acceuil -->
-       <div class="container-fluid background-img-acceuil">
-       
-       
+    <!-- acceuil -->
+
+    <div class="bg-img-acceuil p-5 text-center shadow-1-strong rounded mb-5 text-white" style="
+        background-image: url('./images/bg-img-acceuil.png');
+      ">
+        <div class="container-fluid">
+            <div class="row pt-5">
+                <div class="col-lg-3"></div>
+                <div class="col-lg-6 text-center pt-3">
+                    <h1 class="h1 display-2 pt-2 shadow bg-light bg-opacity-25 border border-light border-2 rounded-2">
+                        Skipper Service
+                    </h1>
+                </div>
+                <div class="col-lg-3"></div>
+            </div>
             <div class="row">
-                <img src="./images/bg-img-acceuil (3).jpg" class="background-img-acceuil" alt="">
-                <div class="col-lg-12">
-                
+                <div class="col-lg-12 pt-3 text-center">
+                    <button type="button" class="btn bg-warning btn-lg">
+                        Nos Exursion
+                    </button>
                 </div>
             </div>
-       </div>
+        </div>
+    </div>
+
+    <!-- end acceuil -->
+    <!-- 
+    a propos -->
 
 
-       <!-- end acceuil -->
 
 
 
-        <script src="main.js"></script>
-        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- <div class="bg-img-apropos p-5 text-center  rounded mb-5 text-white"
+        style="background-image: url('./images/Calanque.jpg');"> -->
+
+    <div class="container-fluid container-apropos pt-5">
+        <div class="row">
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6 bg-light p-5 text-white bg-opacity-50 rounded">
+                <h2 class=" h2 text-uppercase text-center pt-4">a propos</h2>
+                <p class="text-dark p-apropos text-center pt-3">S'offrir les services d'un skipper
+                    proffesionel pour découvrir les célèbres Calanques de la côte sud est dans le top 5 des activités
+                    incontournables pendant vos vacances.
+
+                    Parmi un large choix nous avons sélectionné les meilleurs exursion Marine au départ de la Ciotat ,
+                    st Cyr sur mer ou bandol
+
+                    Vous ne pouvez pas repartir sans profiter de l'une de nos Excursion!</p>
+                <div class="d-grid gap-2 pt-4 col-4 mx-auto">
+                    <button class="btn btn-warning" type="button">Jeter un oeil à nos Excursions !</button>
+                </div>
+            </div>
+            <div class="col-lg-3"></div>
+        </div>
+        <div class="row justify-content-center pt-5 ">
+            <div class="col-lg-4">
+                <div class="card mb-3 bg-light bg-opacity-50 ">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="./images/photo nabo.jpg" class="img-fluid rounded" alt="alexandre le skipper">
+                        </div>
+                        <div class="col-md-8 ">
+                            <div class="card-body  ">
+                                <p class="card-title text-center">Alexandre prono</p>
+                                <p class="card-text">
+ 
+                                    Joignez-vous à Alex dans le cadre d'une journée exceptionnelle! Nous proposons des prestations à la carte, notamment des Balades en mer et Sunset.
+                                    Ambiance familiale et service de qualité !
+
+                                    N'hésitez pas à nous contacter pour plus d'informations.
+                                    
+                                   
+                                    </p>
+                                <p class="card-text"><small class="text-body-secondary"> </small>...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- </div> -->
+
+    <!-- end a propos -->
+
+    <script src="main.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
