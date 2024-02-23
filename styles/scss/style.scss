@@ -6,21 +6,21 @@
 // nav-bar
 
 .navbar {
-    background-color: $bluedark;
+    background-color: map-get($theme-colors, "bluedark");
 }
     
 
 
 .nav-link, .navbar-brand, .h1 {
     font-family: "telemarine1",sans-serif;
-    color: $white;
+    color: map-get($theme-colors, "white");
 }
 
 
    
 
 .login, .navbar-toggler {
-    color: $white;
+    color: map-get($theme-colors, "white");
 }
 
 .login{
@@ -69,7 +69,7 @@ min-height: 100vh;
 
 .h2, .t-alex{
     font-family: "telemarine1",sans-serif;
-    color: $orange;
+   
 }
 
 .p-apropos, .p-alex {
@@ -79,7 +79,7 @@ min-height: 100vh;
 
 
 .container-apropos{
-    background-color: $bluedark;
+    background-color: map-get($theme-colors, "bluedark");
    
 }
 
