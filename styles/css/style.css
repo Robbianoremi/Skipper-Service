@@ -11852,8 +11852,17 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.navbar {
+  background-color: #456D92;
+}
+
 .nav-link, .navbar-brand, .h1 {
   font-family: "telemarine1", sans-serif;
+  color: #F5F7F6;
+}
+
+.login, .navbar-toggler {
+  color: #F5F7F6;
 }
 
 .login {
@@ -11875,15 +11884,152 @@ textarea.form-control-lg {
 }
 
 .btn {
-  font-family: "Daltonemarine", sans-serif;
+  display: inline-block;
+  background-color: #F28132;
+  color: #F5F7F6;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.h2, .t-alex {
-  font-family: "telemarine1", sans-serif;
+.btn:hover {
+  background-color: #e27e37;
 }
 
-.p-apropos, .p-alex {
-  font-family: "Daltonemarine", sans-serif;
+.container-about {
+  background-color: #456D92;
+}
+
+.content {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #F5F7F6;
+  border-radius: 5px;
+}
+
+.photo-section1 {
+  margin-top: 30px;
+  text-align: center;
+  width: 500px;
+}
+
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-img-top {
+  height: 200px; /* Ajuster la hauteur de l'image */
+  object-fit: cover;
+}
+
+.card-title {
+  color: #456D92; /* Couleur du titre */
+}
+
+.excursion-card {
+  border: none;
+  background-color: #456D92; /* Couleur de fond */
+  color: #F5F7F6; /* Couleur du texte */
+  transition: transform 0.3s ease-in-out; /* Animation de transition */
+}
+
+.excursion-card:hover {
+  transform: translateY(-5px); /* Animation de survol */
+}
+
+.excursion-card img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 5px; /* Arrondi en haut à gauche */
+  border-top-right-radius: 5px; /* Arrondi en haut à droite */
+}
+
+.excursion-card .card-body {
+  padding: 1.5rem;
+}
+
+.excursion-card h5, .excursion-card .h5 {
+  color: #F28132; /* Couleur du titre */
+}
+
+.excursion-card p {
+  font-size: 0.9rem;
+}
+
+.container-reservation {
+  max-width: 1300px;
+  background-color: #93B2CA;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.container-contact {
+  background-color: #9FBED1;
+}
+
+.qr-code {
+  width: 200px;
+}
+
+.footer {
+  background-color: #456D92;
+  color: #F5F7F6;
+  padding: 50px 0;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-section {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.footer h2, .footer .h2 {
+  color: #F5F7F6;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 14px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 10px;
+}
+
+.footer ul li a {
+  color: #F5F7F6;
+  text-decoration: none;
+}
+
+.contact-input {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+.footer-bottom {
+  background-color: #93B2CA;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 14px;
 }
 
 /*# sourceMappingURL=style.css.map */
