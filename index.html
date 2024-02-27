@@ -8,22 +8,32 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="styles/css/style.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap" rel="stylesheet">
+    <!-- end google font -->
 </head>
 
 <body>
     <!-- navbar -->
 
-    <nav class="navbar navbar-expand-lg bg-bluedark">
+    <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand p-1" href="#">Skipper Service</a>
+            <!-- <img src="./images/logo_skipper service.jpg" class=" rounded float-end logo" alt="..."> -->
+            <a class="navbar-brand p-1 fs-3" href="#">Skipper Service</a>
+            
             <button class="navbar-toggler btn-bluedark" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse ps-1" id="navbarSupportedContent">
-                <ul class="nav nav-tabs">
-                    <li class="nav-item">
+            <div class="collapse navbar-collapse ps-2" id="navbarSupportedContent">
+                
+                <ul class="nav nav-tabs fs-5 ">
+                    <li class="nav-item ">
                         <a class="nav-link active" aria-current="page" href="#">Acceuil</a>
                     </li>
                     <li class="nav-item">
@@ -36,20 +46,24 @@
                         <a class="nav-link" href="#">Réservation</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Gallerie</a>
+                        <a class="nav-link" href="#">Galerie</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
                 <form class="d-flex ps-2 p-2" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                    <button class="btn btn-outline-light" type="submit">Search</button>
+                    <input class="form-control me-2" type="search" placeholder="..." aria-label="Search" />
+                    <button class="btn btn-outline-light" type="submit">
+                        Recherche</button>
+                    
                 </form>
+               
 
                 <a href="#"
                     class="link-light link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover login">Login
                     / Sign up</a>
+                   
             </div>
         </div>
     </nav>
@@ -57,25 +71,24 @@
     <!-- end nav-bar -->
 
     <!-- acceuil -->
-
     <div class="bg-img-acceuil text-center  text-white" style="
-            background-image: url('./images/bg-img-acceuil.png');
-          ">
-        <div class="container-fluid">
-           
+    background-image: url('./images/bg-img-acceuil.png');
+  ">
+   
+        <div class="container-fluid  pt-5">
             <div class="row pt-5">
-                <div class="col-lg-3"></div>
-                <div class="col-lg-6 text-center pt-3">
-                    <h1 class="h1 display-2 pt-2 shadow bg-light bg-opacity-25 border border-light border-2 rounded-2">
+                <div class="col-lg-4"></div>
+                <div class="col-lg-4 text-center title pt-5">
+                   <h1 class="h1 display-1 pt-2  shadow bg-light bg-opacity-50 border border-light border-2 rounded-2  ">
                         Skipper Service
                     </h1>
                 </div>
-                <div class="col-lg-3"></div>
+                <div class="col-lg-4"></div>
             </div>
             <div class="row">
-                <div class="col-lg-12 pt-3 text-center">
-                    <button type="button" class="btn  btn-lg">
-                        À propos de Skipper Service
+                <div class="col-lg-12 text-center btn-home pt-3">
+                    <button type="button" class="btn btn-lg">
+                        À propos
                     </button>
                 </div>
             </div>
@@ -85,12 +98,21 @@
     <!-- end acceuil -->
     <!-- 
     a propos -->
+
+    
     <div class="container-fluid container-about py-5">
+        
+        <div class="row text-start ">
+            <div class="col-lg-12  ">
+                <h2>À propos </h2>
+            </div>
+        </div>
         <div class="row d-flex ">
             <div class="col-lg-12 d-flex justify-content-center">
+
                 <div class="photo-section1">
                     <img src="./images/photo nabo.jpg" alt="Alex notre Skipper" class="img-fluid mb-4  img-thumbnail">
-                    <p>Alexandre Prono</p>
+                    <p class="alex fs-2">Alexandre Prono</p>
                 </div>
             </div>
             <div class="col-lg-8 mx-auto">
@@ -118,82 +140,125 @@
 
     <!-- excursion -->
 
-    <div class="container-fluid container-excursion py-5">
-        <p class="text-center mb-5">Nos Excursions</p>
-        <div class="row">
-            <div class="col-lg-3 col-md-6">
-                <div class="card mb-4">
-                    <img src="sunset.jpg" class="card-img-top" alt="Excursion Sunset">
-                    <div class="card-body">
-                        <p class="card-title">Excursion Sunset</p>
-                        <p class="card-text">Profitez d'un magnifique coucher de soleil en mer avec notre excursion
-                            Sunset. Une expérience inoubliable!</p>
-                        <ul class="additional-info list-unstyled">
-                            <li>Lieu: La Ciotat</li>
-                            <li>Durée: 2 heures</li>
-                            <li>Prix: 50€</li>
+    <div class="container-fluid container- py-5  mt-5 ">
+        <div class="row pt-3">
+            <div class="col-12 ">
+                <h3> Nos Excursion</h3>
+            </div>
+        </div>
+        <div class="row pt-5 ">
+            <div class="col-lg-4 d-flex justify-content-center pt-3 ">
+                <div class="card card-excursion w-75 h-100  text-center  ">
+                    <img src="./images/299971657_120420164075634_189596576422310359_n.jpg"
+                        class="card-img-top img-thumbnail" alt="...">
+                    <div class="card-body ">
+                        <p class="card-title">Sunset</p>
+                        <p class="card-text">Partagez en famille ou entre amis un moment unique tous les soirs à l'heure
+                            du Sunset!</p>
+                        <p class="card-text">Au programme: <br>Snorkeling dans une eau turquoise, balade en mer et
+                            coucher de soleil !</p>
+
+
+                        <i class="fa-solid fa-location-dot fa-xl" style="color: #f28132;"></i>
+
+
+                        <p class="card-text">Au Départ <br>Bandol / St Cyr Sur Mer / La Ciotat</p>
+                        <p class="card-text">
+                        <ul class="list-group ">
+                            <li class="list-group">De 18h à 22h</li>
+                            <li class="list-group">Max 12 pers.</li>
+                            <li class="list-group">Skipper inclus</li>
+                            <li class="list-group pt-1"> A partir de : 650E* </li>
                         </ul>
-                        <a href="#" class="btn btn-primary">Réserver</a>
+                        </p>
+                        <button type="button" class="btn btn-info btn-sm">Small button</button>
+
+
                     </div>
-                    <div class="card-footer text-muted">
-                        Réservez dès maintenant !
+                    <div class="card-footer ">
+                        <small class="text-body-secondary">*carburant non inclus</small>
+                    </div>
+                    <div class="card-footer ">
+                        <small class="text-body-secondary">Pour les excursions " A la carte" veuillez nous contacter
+                            directement</small>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="card mb-4">
-                    <img src="journee.jpg" class="card-img-top" alt="Excursion Journée">
-                    <div class="card-body">
-                        <p class="card-title">Excursion Journée</p>
-                        <p class="card-text">Passez une journée entière à explorer les beautés de la mer Méditerranée
-                            lors de notre excursion Journée.</p>
-                        <ul class="additional-info list-unstyled">
-                            <li>Lieu: La Ciotat</li>
-                            <li>Durée: 2 heures</li>
-                            <li>Prix: 50€</li>
+            <div class="col-lg-4 d-flex justify-content-center pt-3">
+                <div class="card w-75 h-100 text-center ">
+                    <img src="./images/360123975_254416417350513_4226228601286731345_n.jpg" class="card-img-top img-thumbnail "
+                        alt="...">
+                    <div class="card-body ">
+                        <p class="card-title">Journée</p>
+                        <p class="card-text">Notre excursion d'une journée complète est indéniablement parmi les
+                            expériences les plus mémorables ! Explorez les célèbres calanques et profitez pleinement de
+                            cette aventure.</p>
+
+
+                        <p class="card-text">Au programme: <br>Snorkeling , visite des Calanques et Farniente !</p>
+
+
+                        <i class="fa-solid fa-location-dot fa-xl" style="color: #f28132;"></i>
+
+
+                        <p class="card-text">Au Départ <br>Bandol / St Cyr Sur Mer / La Ciotat</p>
+                        <p class="card-text">
+                        <ul class="list-group ">
+                            <li class="list-group">De 9h à 16h</li>
+                            <li class="list-group">Max 12 pers.</li>
+                            <li class="list-group  ">Skipper inclus</li>
+                            <li class="list-group pt-1 "> A partir de : 800E* </li>
                         </ul>
-                        <a href="#" class="btn btn-primary">Réserver</a>
+                        </p>
+                        <button type="button" class="btn btn-info btn-sm">Small button</button>
+
+
                     </div>
-                    <div class="card-footer text-muted">
-                        Réservez dès maintenant !
+                    <div class="card-footer ">
+                        <small class="text-body-secondary">*carburant non inclus</small>
+                    </div>
+                    <div class="card-footer ">
+                        <small class="text-body-secondary">Pour les excursions " A la carte" veuillez nous contacter
+                            directement</small>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="card mb-4">
-                    <img src="demi-journee.jpg" class="card-img-top" alt="Excursion Demi-Journée">
-                    <div class="card-body">
-                        <p class="card-title">Excursion Demi-Journée</p>
-                        <p class="card-text">Découvrez les meilleurs spots en mer lors de notre excursion Demi-Journée.
-                            Parfait pour une escapade rapide!</p>
-                        <ul class="additional-info list-unstyled">
-                            <li>Lieu: La Ciotat</li>
-                            <li>Durée: 2 heures</li>
-                            <li>Prix: 50€</li>
+            <div class="col-lg-4 d-flex justify-content-center pt-3">
+                <div class="card w-75 h-100 text-center ">
+                    <img src="./images/_1ba314b3-4fb4-49fd-ab48-65d362a1daf4.png" class="card-img-top img-thumbnail"
+                        alt="...">
+                    <div class="card-body ">
+                        <p class="card-title">Demi-Journée</p>
+                        <p class="card-text">Notre excursion d'une demi-journée est véritablement l'une des meilleures
+                            opportunités pour découvrir le littoral. Immergez-vous dans la beauté d'une crique préservée
+                            et kiffez a fond.</p>
+                        <p class="card-text">Au programme: <br>
+                            Snorkeling , visite des Calanques et Farniente ! </p>
+
+
+                        <i class="fa-solid fa-location-dot fa-xl" style="color: #f28132;"></i>
+
+
+                        <p class="card-text">Au Départ <br>Bandol / St Cyr Sur Mer / La Ciotat</p>
+                        <p class="card-text">
+                        <ul class="list-group ">
+                            <li class="list-group">Matinée de 9h à 13h</li>
+                            <li class="list-group">Après-midi de 14h à 18h</li>
+                            <li class="list-group">Max 12 pers.</li>
+                            <li class="list-group">Skipper inclus</li>
+                            <li class="list-group pt-1">A partir de : 650E* </li>
                         </ul>
-                        <a href="#" class="btn btn-primary">Réserver</a>
+
+
+                        </p>
+                        <button type="button" class="btn btn-info btn-sm">Small button</button>
                     </div>
-                    <div class="card-footer text-muted">
-                        Réservez dès maintenant !
+                    <div class="card-footer">
+                        <small class="text-body-secondary">*carburant non inclus</small>
                     </div>
-                </div>
-            </div>
-            <div class="col-lg-3 col-md-6">
-                <div class="card mb-4">
-                    <img src="a-la-carte.jpg" class="card-img-top" alt="Excursion À la Carte">
-                    <div class="card-body">
-                        <p class="card-title">Excursion À la Carte</p>
-                        <p class="card-text">Personnalisez votre aventure en mer avec notre excursion À la Carte. Créez
-                            des souvenirs uniques!</p>
-                        <ul class="additional-info list-unstyled">
-                            <li>Lieu: La Ciotat</li>
-                            <li>Durée: 2 heures</li>
-                            <li>Prix: 50€</li>
-                        </ul>
-                        <a href="#" class="btn btn-primary">Réserver</a>
-                    </div>
-                    <div class="card-footer text-muted">
-                        Réservez dès maintenant !
+                    <div class="card-footer ">
+                        <small class="text-body-secondary">Pour les excursions " A la carte" veuillez nous contacter
+                            directement</small>
                     </div>
                 </div>
             </div>
@@ -201,12 +266,18 @@
     </div>
 
 
+
     <!-- end exursion -->
 
     <!-- reservation -->
     <div class="container-fluid ">
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Réservation</h3>
+            </div>
+        </div>
         <div class="container container-reservation shadow py-5">
-            <p class="text-center mb-5">Formulaire de Réservation</p>
+            <p class="text-center card-title mb-5">Formulaire de Réservation</p>
             <form>
                 <div class="row">
                     <div class="col-md-6 ps-5">
@@ -270,12 +341,173 @@
 
     <!-- end reservation -->
 
+    <!-- galerie -->
+    <div class="container-fluid my-5 ">
+        <div class="row">
+            <div class="col-lg-12">
+                <h4>Galerie</h4>
+            </div>
+        </div>
+        <div class="row ">
+            <div class="col-lg-4">
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                    <!-- Galerie d'images -->
+                    <div class="col">
+                        <div class="gallery-item">
+                            <img src="./images/35657.jpg" class="img-fluid" alt="Image 1">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="gallery-item">
+                            <img src="./images/35657.jpg" class="img-fluid" alt="Image 2">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="gallery-item">
+                            <img src="./images/35657.jpg" class="img-fluid" alt="Image 3">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="gallery-item">
+                            <img src="https://via.placeholder.com/400x400" class="img-fluid" alt="Image 3">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="gallery-item">
+                            <img src="https://via.placeholder.com/200x200" class="img-fluid" alt="Image 1">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="gallery-item">
+                            <img src="https://via.placeholder.com/400x400" class="img-fluid" alt="Image 2">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="gallery-item">
+                            <img src="https://via.placeholder.com/400x400" class="img-fluid" alt="Image 3">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="gallery-item">
+                            <img src="https://via.placeholder.com/400x400" class="img-fluid" alt="Image 3">
+                        </div>
+                    </div>
+                    <!-- Ajoutez plus d'images si nécessaire -->
+                </div>
+            </div>
+
+
+
+
+
+            <div class="col-lg-4 d-flex justify-content-center">
+                <div id="carouselExampleDark" class="carousel carousel-dark slide ">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
+                            aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                            aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="./images/bg-img-acceuil.png" class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>First slide label</h5>
+                                <p>Some representative placeholder content for the first slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item" data-bs-interval="2000">
+                            <img src="..." class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Second slide label</h5>
+                                <p>Some representative placeholder content for the second slide.</p>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <img src="..." class="d-block w-100" alt="...">
+                            <div class="carousel-caption d-none d-md-block">
+                                <h5>Third slide label</h5>
+                                <p>Some representative placeholder content for the third slide.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-lg-4  ">
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+                    <!-- Galerie d'images -->
+                    <div class="col">
+                        <div class="gallery-item">
+                            <img src="https://via.placeholder.com/400x400" class="img-fluid" alt="Image 1">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="gallery-item">
+                            <img src="https://via.placeholder.com/400x400" class="img-fluid" alt="Image 2">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="gallery-item">
+                            <img src="https://via.placeholder.com/400x400" class="img-fluid" alt="Image 3">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="gallery-item">
+                            <img src="https://via.placeholder.com/400x400" class="img-fluid" alt="Image 3">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="gallery-item">
+                            <img src="https://via.placeholder.com/200x200" class="img-fluid" alt="Image 1">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="gallery-item">
+                            <img src="https://via.placeholder.com/400x400" class="img-fluid" alt="Image 2">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="gallery-item">
+                            <img src="https://via.placeholder.com/400x400" class="img-fluid" alt="Image 3">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="gallery-item">
+                            <img src="https://via.placeholder.com/400x400" class="img-fluid" alt="Image 3">
+                        </div>
+                    </div>
+                    <!-- Ajoutez plus d'images si nécessaire -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- end galery -->
+
     <!-- contact -->
     <div class="container-fluid container-contact py-5">
         <div class="row">
             <!-- Formulaire de contact -->
             <div class="col-lg-6 mb-5 mb-lg-0 ps-5">
-                <p class="mb-4">Contactez-nous</p>
+                <p class="mb-4 card-title">Contactez-nous</p>
                 <form>
                     <div class="mb-3">
                         <label for="name" class="form-label">Nom</label>
@@ -304,9 +536,9 @@
                         <h5 class="card-title">Coordonnées</h5>
                         <p class="card-text">Vous pouvez nous contacter aux coordonnées suivantes :</p>
                         <ul class="list-unstyled">
-                            <li>Adresse: 410c chemin de la croix des signaux, 83740 La Cadière-d'Azur, France</li>
-                            <li>Téléphone: +33 (0)6 17 35 28 37</li>
-                            <li>Email: skipperservicebsm@gmail.com</li>
+                            <li class="fw-semibold">Adresse:</li> <p>410c chemin de la croix des signaux, <br>83740 La Cadière-d'Azur, France</p>
+                            <li class="fw-semibold" >Téléphone:</li><p>+33 (0)6 17 35 28 37</p> 
+                            <li class="fw-semibold">Email:</li> <p>skipperservicebsm@gmail.com</p>
                         </ul>
                     </div>
                     <!-- Emplacement pour le QR code -->
@@ -315,9 +547,10 @@
                             <p>QR Code</p>
                             <img src="./images/qr-code facebook.png" class="img-fluid qr-code " alt="QR Code facebook">
                             <img src="./images/qr-code whatsapp.png" class="img-fluid qr-code " alt="QR Code whatsapp">
-                            <img src="./images/qr-code instagram.png" class="img-fluid qr-code " alt="QR Code instagram">
+                            <img src="./images/qr-code instagram.png" class="img-fluid qr-code "
+                                alt="QR Code instagram">
                         </div>
-                        
+
                     </div>
                 </div>
             </div>
@@ -339,25 +572,24 @@
     <!-- footer -->
 
     <div class="content text-center">
-        <p class="text center"> Skipper Service</p>
+        <p class="text center card-title"> Skipper Service</p>
+     </div>
 
-    </div>
-
-    <footer class="footer mt-5 py-5  text-light">
+    <footer class="footer mt-2  text-light">
         <div class="container-fluid ">
             <div class="row text-center">
                 <!-- Section Contact -->
                 <div class="col-md-3">
                     <p class="fs-2 ">Contact</p>
                     <ul class="list-unstyled text-start ps-5 pt-2">
-                        <li> +33 (0)6 17 35 28 37</li>
-                        <li> skipperservicebsm@gmail.com</li>
-                        <li> 410c chemin de la croix des signaux <br >83740 La Cadière-d'Azur, France </li>
+                        <li><i class="fa-brands fa-whatsapp fa-xl" style="color: #f5f7f6;"></i> +33 (0)6 17 35 28 37</li>
+                        <li><i class="fa-regular fa-envelope fa-xl" style="color: #f5f7f6;"></i> skipperservicebsm@gmail.com</li>
+                        <li><i class="fa-solid fa-location-dot fa-xl "></i> 410c chemin de la croix des signaux <br>83740 La Cadière-d'Azur, France </li>
                     </ul>
                 </div>
                 <!-- Section Liens Utiles -->
                 <div class="col-md-3">
-                    <p class="fs-2" >Liens Utiles</p>
+                    <p class="fs-2">Liens Utiles</p>
                     <ul class="list-unstyled text-start ps-5 pt-2 ">
                         <li><a href="#">Conditions d'utilisation</a></li>
                         <li><a href="#">Politique de confidentialité</a></li>
@@ -366,7 +598,7 @@
                 </div>
                 <!-- Section Nos Partenaires -->
                 <div class="col-md-3">
-                    <p class="fs-2" >Nos Partenaires</p>
+                    <p class="fs-2">Nos Partenaires</p>
                     <ul class="list-unstyled text-start ps-5 pt-2">
                         <li><a href="#">Sport & Découverte</a></li>
                         <li><a href="#">...</a></li>
@@ -376,12 +608,13 @@
                 <!-- Section Réseaux Sociaux -->
                 <div class="col-md-3">
                     <p class="fs-2">Réseaux Sociaux</p>
-                    <ul class="list-unstyled text-start ps-5 pt-2">
-                        <li><a href="#"><i class="bi bi-facebook"></i> Facebook</a></li>
-                        <li><a href="#"><i class="bi bi-twitter"></i> Twitter</a></li>
-                        <li><a href="#"><i class="bi bi-instagram"></i> Instagram</a></li>
-                    </ul>
+                    <div class="col pt-3">
+                        <i class="fa-brands fa-facebook fa-2xl p-2" style="color: #f5f7f6;"></i>
+                        <i class="fa-brands fa-instagram fa-2xl p-2" style="color: #f5f7f6;"></i>
+                        <i class="fa-brands fa-youtube fa-2xl p-2" style="color: #f5f7f6;"></i>
+                    </div>
                 </div>
+                
             </div>
         </div>
     </footer>

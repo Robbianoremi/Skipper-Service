@@ -52,3 +52,20 @@ document.addEventListener("DOMContentLoaded", function() {
   });
   
 // end reservation
+
+// galerie
+
+function adjustImageHeight() {
+  const galleryItems = document.querySelectorAll('.gallery-item');
+  galleryItems.forEach(item => {
+    const img = item.querySelector('img');
+    img.style.height = `${img.offsetWidth}px`; // Ajuste la hauteur en fonction de la largeur pour maintenir le ratio
+  });
+}
+
+// Appeler la fonction lors du chargement initial et lors du redimensionnement de la fenêtre
+window.addEventListener('load', adjustImageHeight);
+window.addEventListener('resize', adjustImageHeight);
+
+
+// end galerie

@@ -14,9 +14,21 @@ background-color: #456D92;
 
 
 .nav-link, .navbar-brand, .h1 {
-    font-family: "telemarine1",sans-serif;
+    // font-family: "telemarine1",sans-serif;
+    font-family:"Kaushan Script", cursive;
     // color: map-get($theme-colors, "white");
     color: #F5F7F6;
+}
+
+h2, h3, h4  {
+  font-family:"Kaushan Script", cursive;
+  color: #F28132;
+  font-size: 60px;
+}
+.alex{
+  font-family:"Kaushan Script", cursive;
+  
+  color: #F5F7F6;
 }
 
 
@@ -28,10 +40,13 @@ background-color: #456D92;
 }
 
 .login{
-padding-left: 230px;
+padding-left: 200px;
 }
 
-
+.logo{
+  width: 100px;
+  
+}
 
 
 
@@ -53,9 +68,9 @@ min-height: 100vh;
 
 }
 
-.logo{
-    width: 200px;
-    height: 100px;
+
+p, li, a{
+  font-family: "News Cycle", sans-serif;
 }
 
 
@@ -70,6 +85,8 @@ min-height: 100vh;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    font-family: "News Cycle", sans-serif;
+    
   }
   
   .btn:hover {
@@ -80,6 +97,15 @@ min-height: 100vh;
 
 // a propos
 
+
+.bg-img-about{
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+background-attachment: fixed;
+width: 100%;
+min-height: 100vh;
+}
 
   
 //  
@@ -111,9 +137,7 @@ min-height: 100vh;
 
 // excursion
 
-.container-excursion{
 
-}
 .card {
     transition: transform 0.2s;
   }
@@ -121,11 +145,14 @@ min-height: 100vh;
     transform: scale(1.05);
   }
   .card-img-top {
-    height: 200px; /* Ajuster la hauteur de l'image */
+    height: 250px; /* Ajuster la hauteur de l'image */
     object-fit: cover;
   }
   .card-title {
     color: #456D92; /* Couleur du titre */
+    font-family:"Kaushan Script", cursive;
+    font-size: 40px;
+
   }
 
 
@@ -173,10 +200,51 @@ font-size: 0.9rem;
     margin-bottom: 1.5rem;
   }
 // end reservation
+
+// galerie
+
+.carousel-dark {
+ width: 700px;
+}
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: #F28132;  /* Couleur de fond pour les icônes de contrôle */
+  border-radius: 50%; /* Bordure arrondie pour les icônes de contrôle */
+  width: 40px; /* Largeur des icônes de contrôle */
+  height: 40px; /* Hauteur des icônes de contrôle */
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 5%; /* Largeur des boutons de contrôle */
+}
+
+.carousel-control-prev-icon::before, .carousel-control-next-icon::before {
+  color: #000000; /* Couleur de l'icône de contrôle */
+  font-size: 1.5rem; /* Taille de police de l'icône de contrôle */
+}
+
+.gallery-item {
+  margin-bottom: 20px;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.gallery-item:hover {
+  opacity: 0.8;
+}
+
+
+// end galerie
+
+
 // contact
 
   .container-contact{
-    background-color: #9FBED1;
+    background-color: #93B2CA;
   }
 
   .qr-code{

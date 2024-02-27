@@ -1,12 +1,4 @@
 @charset "UTF-8";
-@font-face {
-  font-family: "telemarine1";
-  src: url(../font/telemarines1.ttf);
-}
-@font-face {
-  font-family: "Daltonemarine";
-  src: url(../font/Dalton\ Marine.ttf);
-}
 /*!
  * Bootstrap  v5.3.3 (https://getbootstrap.com/)
  * Copyright 2011-2024 The Bootstrap Authors
@@ -11857,7 +11849,18 @@ textarea.form-control-lg {
 }
 
 .nav-link, .navbar-brand, .h1 {
-  font-family: "telemarine1", sans-serif;
+  font-family: "Kaushan Script", cursive;
+  color: #F5F7F6;
+}
+
+h2, .h2, h3, .h3, h4, .h4 {
+  font-family: "Kaushan Script", cursive;
+  color: #F28132;
+  font-size: 60px;
+}
+
+.alex {
+  font-family: "Kaushan Script", cursive;
   color: #F5F7F6;
 }
 
@@ -11866,7 +11869,11 @@ textarea.form-control-lg {
 }
 
 .login {
-  padding-left: 230px;
+  padding-left: 200px;
+}
+
+.logo {
+  width: 100px;
 }
 
 .bg-img-acceuil {
@@ -11878,9 +11885,8 @@ textarea.form-control-lg {
   min-height: 100vh;
 }
 
-.logo {
-  width: 200px;
-  height: 100px;
+p, li, a {
+  font-family: "News Cycle", sans-serif;
 }
 
 .btn {
@@ -11892,10 +11898,20 @@ textarea.form-control-lg {
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  font-family: "News Cycle", sans-serif;
 }
 
 .btn:hover {
   background-color: #e27e37;
+}
+
+.bg-img-about {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .container-about {
@@ -11924,12 +11940,14 @@ textarea.form-control-lg {
 }
 
 .card-img-top {
-  height: 200px; /* Ajuster la hauteur de l'image */
+  height: 250px; /* Ajuster la hauteur de l'image */
   object-fit: cover;
 }
 
 .card-title {
   color: #456D92; /* Couleur du titre */
+  font-family: "Kaushan Script", cursive;
+  font-size: 40px;
 }
 
 .excursion-card {
@@ -11971,8 +11989,43 @@ textarea.form-control-lg {
   margin-bottom: 1.5rem;
 }
 
+.carousel-dark {
+  width: 700px;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  background-color: #F28132; /* Couleur de fond pour les icônes de contrôle */
+  border-radius: 50%; /* Bordure arrondie pour les icônes de contrôle */
+  width: 40px; /* Largeur des icônes de contrôle */
+  height: 40px; /* Hauteur des icônes de contrôle */
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 5%; /* Largeur des boutons de contrôle */
+}
+
+.carousel-control-prev-icon::before, .carousel-control-next-icon::before {
+  color: #000000; /* Couleur de l'icône de contrôle */
+  font-size: 1.5rem; /* Taille de police de l'icône de contrôle */
+}
+
+.gallery-item {
+  margin-bottom: 20px;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+.gallery-item img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.gallery-item:hover {
+  opacity: 0.8;
+}
+
 .container-contact {
-  background-color: #9FBED1;
+  background-color: #93B2CA;
 }
 
 .qr-code {
