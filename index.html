@@ -15,7 +15,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap" rel="stylesheet">
     <!-- end google font -->
-</head>
+
+        <link rel="stylesheet" href="https://serpapi.com/search.html?engine=google_maps&q=calanque+du+mugel&ll=%4040.7455096%2C-74.0083012%2C14z&google_domain=google.com&hl=en&type=search&api_key=12d0553907cfeb9f0312a000322e34a487a142660a6dac61feea1b39a6843820">
+       
+        </head>
 
 <body>
     <!-- navbar -->
@@ -138,9 +141,72 @@
 
     <!-- end apropos -->
 
+    <!-- api -->
+    <p>Résultats de recherche</p>
+    
+    <div id="searchResults"></div>
+   
+
+
+    <!-- api -->
+
     <!-- excursion -->
 
-    <div class="container-fluid container- py-5  mt-5 ">
+    <!-- chat -->
+
+    <div class="container">
+        <h1>Nos Excursions</h1>
+    
+        <div class="filters">
+            <label for="lieu">Lieu:</label>
+            <select id="lieu">
+                <option value="Tous">Tous</option>
+                <option value="Bandol">Bandol</option>
+                <option value="St Cyr Sur Mer">St Cyr Sur Mer</option>
+                <option value="La Ciotat">La Ciotat</option>
+                <option value="Cassis">Cassis</option>
+                <option value="Marseille">Marseille</option>
+            </select>
+    
+            <label for="duree">Durée:</label>
+            <select id="duree">
+                <option value="Tous">Tous</option>
+                <option value="Demi-journée / Matinée">Demi-journée / Matinée</option>
+                <option value="Demi-journée / Après-midi">Demi-journée / Après-midi</option>
+                <option value="Journée">Journée</option>
+                <option value="Sunset">Sunset</option>
+                <option value="À la carte">À la carte</option>
+            </select>
+    
+            
+
+            <label for="personnes">Le nombre de personnes:</label>
+            <input type="number" id="personnes" min="0">
+            
+            <label for="depart">Au départ de:</label>
+            <select id="depart">
+                <option value="Tous">Tous</option>
+                <option value="Bandol">Bandol</option>
+                <option value="St Cyr Sur Mer">St Cyr Sur Mer</option>
+                <option value="La Ciotat">La Ciotat</option>
+              
+            </select>
+            
+            <label for="prix">Prix maximum:</label>
+            <input type="number" id="prix" min="0">
+
+        </div>
+        
+    
+        <div id="excursions" class="row">
+            <!-- Excursions seront ajoutées dynamiquement ici -->
+        </div>
+    </div>
+    
+
+    <!-- en chat -->
+
+    <!-- <div class="container-fluid container- py-5  mt-5 ">
         <div class="row pt-3">
             <div class="col-12 ">
                 <h3> Nos Excursion</h3>
@@ -225,8 +291,8 @@
             </div>
             <div class="col-lg-4 d-flex justify-content-center pt-3">
                 <div class="card w-75 h-100 text-center ">
-                    <img src="./images/_1ba314b3-4fb4-49fd-ab48-65d362a1daf4.png" class="card-img-top img-thumbnail"
-                        alt="...">
+                    <img src="./images/360123975_254416417350513_4226228601286731345_n.jpg" class="card-img-top img-thumbnail"
+                        alt="okhlih">
                     <div class="card-body ">
                         <p class="card-title">Demi-Journée</p>
                         <p class="card-text">Notre excursion d'une demi-journée est véritablement l'une des meilleures
@@ -264,7 +330,7 @@
             </div>
         </div>
     </div>
-
+ -->
 
 
     <!-- end exursion -->
@@ -420,14 +486,14 @@
                             </div>
                         </div>
                         <div class="carousel-item" data-bs-interval="2000">
-                            <img src="..." class="d-block w-100" alt="...">
+                            <img src="" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Second slide label</h5>
                                 <p>Some representative placeholder content for the second slide.</p>
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
+                            <img src="" class="d-block w-100" alt="...">
                             <div class="carousel-caption d-none d-md-block">
                                 <h5>Third slide label</h5>
                                 <p>Some representative placeholder content for the third slide.</p>
@@ -620,8 +686,18 @@
     </footer>
     <!-- end footer -->
 
+
+    
+
     <script src="main.js"></script>
+    <script src="serpapi_query.js"></script>
+    <script src="excursion.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- api -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/serpapi/dist/serpapi.js"></script>
+
+
 </body>
 
 </html>
