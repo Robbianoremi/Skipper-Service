@@ -12032,6 +12032,23 @@ p, li, a {
   width: 200px;
 }
 
+.back-to-top {
+  display: none; /* Par défaut, le bouton est masqué */
+  position: fixed; /* Position fixe pour le maintenir en haut de la fenêtre */
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff; /* Couleur de fond du bouton */
+  color: #fff; /* Couleur du texte */
+  padding: 10px 20px; /* Espacement interne */
+  border-radius: 5px; /* Coins arrondis */
+  text-decoration: none; /* Pas de soulignement pour le lien */
+  transition: opacity 0.3s ease; /* Animation de transition */
+}
+
+.back-to-top:hover {
+  background-color: #0056b3; /* Couleur de fond au survol */
+}
+
 .footer {
   background-color: #456D92;
   color: #F5F7F6;

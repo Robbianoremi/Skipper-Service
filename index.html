@@ -15,10 +15,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=News+Cycle&display=swap" rel="stylesheet">
     <!-- end google font -->
+    <link rel="stylesheet"
+        href="https://serpapi.com/search.html?engine=google&q=calnque+du+mugel+la+ciotat&location=Austin%2C+Texas%2C+United+States&google_domain=google.com&gl=us&hl=en&api_key=12d0553907cfeb9f0312a000322e34a487a142660a6dac61feea1b39a6843820">
 
-        <link rel="stylesheet" href="https://serpapi.com/search.html?engine=google_maps&q=calanque+du+mugel&ll=%4040.7455096%2C-74.0083012%2C14z&google_domain=google.com&hl=en&type=search&api_key=12d0553907cfeb9f0312a000322e34a487a142660a6dac61feea1b39a6843820">
-       
-        </head>
+
+</head>
 
 <body>
     <!-- navbar -->
@@ -27,62 +28,109 @@
         <div class="container-fluid">
             <!-- <img src="./images/logo_skipper service.jpg" class=" rounded float-end logo" alt="..."> -->
             <a class="navbar-brand p-1 fs-3" href="#">Skipper Service</a>
-            
+
             <button class="navbar-toggler btn-bluedark" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse ps-2" id="navbarSupportedContent">
-                
+
                 <ul class="nav nav-tabs fs-5 ">
                     <li class="nav-item ">
-                        <a class="nav-link active" aria-current="page" href="#">Acceuil</a>
+                        <a class="nav-link active" aria-current="page" href="#Acceuil">Acceuil</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">A propos</a>
+                        <a class="nav-link" href="#A propos">A propos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Exursion</a>
+                        <a class="nav-link" href="#Excursion">Exursion</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Réservation</a>
+                        <a class="nav-link" href="#Reservation">Réservation</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Galerie</a>
+                        <a class="nav-link" href="#Galerie">Galerie</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="#Contact">Contact</a>
                     </li>
                 </ul>
                 <form class="d-flex ps-2 p-2" role="search">
                     <input class="form-control me-2" type="search" placeholder="..." aria-label="Search" />
                     <button class="btn btn-outline-light" type="submit">
                         Recherche</button>
-                    
                 </form>
-               
+                
+                <a href="#" class="login link-light link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Sign in / Sign up
+                </a>
 
-                <a href="#"
-                    class="link-light link-offset-2 link-underline-opacity-10 link-underline-opacity-100-hover login">Login
-                    / Sign up</a>
-                   
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">Sign In / Sign Up</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close">
+                                </button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Sign In Form -->
+                                <form id="signInForm">
+                                    <h4>Sign In</h4>
+                                    <div class="mb-3">
+                                        <label for="signInEmail" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="signInEmail" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="signInPassword" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="signInPassword" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Sign In</button>
+                                </form>
+
+                                <!-- Sign Up Form -->
+                                <form id="signUpForm" style="display: none;">
+                                    <h4>Sign Up</h4>
+                                    <div class="mb-3">
+                                        <label for="signUpEmail" class="form-label">Email address</label>
+                                        <input type="email" class="form-control" id="signUpEmail" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="signUpPassword" class="form-label">Password</label>
+                                        <input type="password" class="form-control" id="signUpPassword" required>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" id="switchToSignIn">Sign In</button>
+                                <button type="button" class="btn btn-secondary" id="switchToSignUp">Sign Up</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
+
 
     <!-- end nav-bar -->
 
     <!-- acceuil -->
     <div class="bg-img-acceuil text-center  text-white" style="
-    background-image: url('./images/bg-img-acceuil.png');
-  ">
-   
-        <div class="container-fluid  pt-5">
+            background-image: url('./images/bg-img-acceuil.png');
+        ">
+
+        <div class="container-fluid pt-5"  id="Acceuil">
             <div class="row pt-5">
                 <div class="col-lg-4"></div>
                 <div class="col-lg-4 text-center title pt-5">
-                   <h1 class="h1 display-1 pt-2  shadow bg-light bg-opacity-50 border border-light border-2 rounded-2  ">
+                    <h1
+                        class="h1 display-1 pt-2  shadow bg-light bg-opacity-50 border border-light border-2 rounded-2  ">
                         Skipper Service
                     </h1>
                 </div>
@@ -100,11 +148,11 @@
 
     <!-- end acceuil -->
     <!-- 
-    a propos -->
+            a propos -->
 
-    
-    <div class="container-fluid container-about py-5">
-        
+
+    <div class="container-fluid container-about py-5" id="A propos">
+
         <div class="row text-start ">
             <div class="col-lg-12  ">
                 <h2>À propos </h2>
@@ -142,10 +190,6 @@
     <!-- end apropos -->
 
     <!-- api -->
-    <p>Résultats de recherche</p>
-    
-    <div id="searchResults"></div>
-   
 
 
     <!-- api -->
@@ -154,12 +198,13 @@
 
     <!-- chat -->
 
-    <div class="container">
+    <div class="container" id="Excursion">
         <h1>Nos Excursions</h1>
-    
+
         <div class="filters">
             <label for="lieu">Lieu:</label>
             <select id="lieu">
+                <option value="" selected>-- Sélectionnez une option --</option>
                 <option value="Tous">Tous</option>
                 <option value="Bandol">Bandol</option>
                 <option value="St Cyr Sur Mer">St Cyr Sur Mer</option>
@@ -167,9 +212,10 @@
                 <option value="Cassis">Cassis</option>
                 <option value="Marseille">Marseille</option>
             </select>
-    
+
             <label for="duree">Durée:</label>
             <select id="duree">
+                
                 <option value="Tous">Tous</option>
                 <option value="Demi-journée / Matinée">Demi-journée / Matinée</option>
                 <option value="Demi-journée / Après-midi">Demi-journée / Après-midi</option>
@@ -177,166 +223,167 @@
                 <option value="Sunset">Sunset</option>
                 <option value="À la carte">À la carte</option>
             </select>
-    
-            
+
+
 
             <label for="personnes">Le nombre de personnes:</label>
             <input type="number" id="personnes" min="0">
-            
+
             <label for="depart">Au départ de:</label>
             <select id="depart">
                 <option value="Tous">Tous</option>
                 <option value="Bandol">Bandol</option>
                 <option value="St Cyr Sur Mer">St Cyr Sur Mer</option>
                 <option value="La Ciotat">La Ciotat</option>
-              
+
             </select>
-            
+
             <label for="prix">Prix maximum:</label>
             <input type="number" id="prix" min="0">
 
         </div>
-        
-    
+
+
         <div id="excursions" class="row">
             <!-- Excursions seront ajoutées dynamiquement ici -->
+          
         </div>
     </div>
-    
+
 
     <!-- en chat -->
 
     <!-- <div class="container-fluid container- py-5  mt-5 ">
-        <div class="row pt-3">
-            <div class="col-12 ">
-                <h3> Nos Excursion</h3>
-            </div>
-        </div>
-        <div class="row pt-5 ">
-            <div class="col-lg-4 d-flex justify-content-center pt-3 ">
-                <div class="card card-excursion w-75 h-100  text-center  ">
-                    <img src="./images/299971657_120420164075634_189596576422310359_n.jpg"
-                        class="card-img-top img-thumbnail" alt="...">
-                    <div class="card-body ">
-                        <p class="card-title">Sunset</p>
-                        <p class="card-text">Partagez en famille ou entre amis un moment unique tous les soirs à l'heure
-                            du Sunset!</p>
-                        <p class="card-text">Au programme: <br>Snorkeling dans une eau turquoise, balade en mer et
-                            coucher de soleil !</p>
-
-
-                        <i class="fa-solid fa-location-dot fa-xl" style="color: #f28132;"></i>
-
-
-                        <p class="card-text">Au Départ <br>Bandol / St Cyr Sur Mer / La Ciotat</p>
-                        <p class="card-text">
-                        <ul class="list-group ">
-                            <li class="list-group">De 18h à 22h</li>
-                            <li class="list-group">Max 12 pers.</li>
-                            <li class="list-group">Skipper inclus</li>
-                            <li class="list-group pt-1"> A partir de : 650E* </li>
-                        </ul>
-                        </p>
-                        <button type="button" class="btn btn-info btn-sm">Small button</button>
-
-
+                <div class="row pt-3">
+                    <div class="col-12 ">
+                        <h3> Nos Excursion</h3>
                     </div>
-                    <div class="card-footer ">
-                        <small class="text-body-secondary">*carburant non inclus</small>
+                </div>
+                <div class="row pt-5 ">
+                    <div class="col-lg-4 d-flex justify-content-center pt-3 ">
+                        <div class="card card-excursion w-75 h-100  text-center  ">
+                            <img src="./images/299971657_120420164075634_189596576422310359_n.jpg"
+                                class="card-img-top img-thumbnail" alt="...">
+                            <div class="card-body ">
+                                <p class="card-title">Sunset</p>
+                                <p class="card-text">Partagez en famille ou entre amis un moment unique tous les soirs à l'heure
+                                    du Sunset!</p>
+                                <p class="card-text">Au programme: <br>Snorkeling dans une eau turquoise, balade en mer et
+                                    coucher de soleil !</p>
+
+
+                                <i class="fa-solid fa-location-dot fa-xl" style="color: #f28132;"></i>
+
+
+                                <p class="card-text">Au Départ <br>Bandol / St Cyr Sur Mer / La Ciotat</p>
+                                <p class="card-text">
+                                <ul class="list-group ">
+                                    <li class="list-group">De 18h à 22h</li>
+                                    <li class="list-group">Max 12 pers.</li>
+                                    <li class="list-group">Skipper inclus</li>
+                                    <li class="list-group pt-1"> A partir de : 650E* </li>
+                                </ul>
+                                </p>
+                                <button type="button" class="btn btn-info btn-sm">Small button</button>
+
+
+                            </div>
+                            <div class="card-footer ">
+                                <small class="text-body-secondary">*carburant non inclus</small>
+                            </div>
+                            <div class="card-footer ">
+                                <small class="text-body-secondary">Pour les excursions " A la carte" veuillez nous contacter
+                                    directement</small>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-footer ">
-                        <small class="text-body-secondary">Pour les excursions " A la carte" veuillez nous contacter
-                            directement</small>
+                    <div class="col-lg-4 d-flex justify-content-center pt-3">
+                        <div class="card w-75 h-100 text-center ">
+                            <img src="./images/360123975_254416417350513_4226228601286731345_n.jpg" class="card-img-top img-thumbnail "
+                                alt="...">
+                            <div class="card-body ">
+                                <p class="card-title">Journée</p>
+                                <p class="card-text">Notre excursion d'une journée complète est indéniablement parmi les
+                                    expériences les plus mémorables ! Explorez les célèbres calanques et profitez pleinement de
+                                    cette aventure.</p>
+
+
+                                <p class="card-text">Au programme: <br>Snorkeling , visite des Calanques et Farniente !</p>
+
+
+                                <i class="fa-solid fa-location-dot fa-xl" style="color: #f28132;"></i>
+
+
+                                <p class="card-text">Au Départ <br>Bandol / St Cyr Sur Mer / La Ciotat</p>
+                                <p class="card-text">
+                                <ul class="list-group ">
+                                    <li class="list-group">De 9h à 16h</li>
+                                    <li class="list-group">Max 12 pers.</li>
+                                    <li class="list-group  ">Skipper inclus</li>
+                                    <li class="list-group pt-1 "> A partir de : 800E* </li>
+                                </ul>
+                                </p>
+                                <button type="button" class="btn btn-info btn-sm">Small button</button>
+
+
+                            </div>
+                            <div class="card-footer ">
+                                <small class="text-body-secondary">*carburant non inclus</small>
+                            </div>
+                            <div class="card-footer ">
+                                <small class="text-body-secondary">Pour les excursions " A la carte" veuillez nous contacter
+                                    directement</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 d-flex justify-content-center pt-3">
+                        <div class="card w-75 h-100 text-center ">
+                            <img src="./images/360123975_254416417350513_4226228601286731345_n.jpg" class="card-img-top img-thumbnail"
+                                alt="okhlih">
+                            <div class="card-body ">
+                                <p class="card-title">Demi-Journée</p>
+                                <p class="card-text">Notre excursion d'une demi-journée est véritablement l'une des meilleures
+                                    opportunités pour découvrir le littoral. Immergez-vous dans la beauté d'une crique préservée
+                                    et kiffez a fond.</p>
+                                <p class="card-text">Au programme: <br>
+                                    Snorkeling , visite des Calanques et Farniente ! </p>
+
+
+                                <i class="fa-solid fa-location-dot fa-xl" style="color: #f28132;"></i>
+
+
+                                <p class="card-text">Au Départ <br>Bandol / St Cyr Sur Mer / La Ciotat</p>
+                                <p class="card-text">
+                                <ul class="list-group ">
+                                    <li class="list-group">Matinée de 9h à 13h</li>
+                                    <li class="list-group">Après-midi de 14h à 18h</li>
+                                    <li class="list-group">Max 12 pers.</li>
+                                    <li class="list-group">Skipper inclus</li>
+                                    <li class="list-group pt-1">A partir de : 650E* </li>
+                                </ul>
+
+
+                                </p>
+                                <button type="button" class="btn btn-info btn-sm">Small button</button>
+                            </div>
+                            <div class="card-footer">
+                                <small class="text-body-secondary">*carburant non inclus</small>
+                            </div>
+                            <div class="card-footer ">
+                                <small class="text-body-secondary">Pour les excursions " A la carte" veuillez nous contacter
+                                    directement</small>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-            <div class="col-lg-4 d-flex justify-content-center pt-3">
-                <div class="card w-75 h-100 text-center ">
-                    <img src="./images/360123975_254416417350513_4226228601286731345_n.jpg" class="card-img-top img-thumbnail "
-                        alt="...">
-                    <div class="card-body ">
-                        <p class="card-title">Journée</p>
-                        <p class="card-text">Notre excursion d'une journée complète est indéniablement parmi les
-                            expériences les plus mémorables ! Explorez les célèbres calanques et profitez pleinement de
-                            cette aventure.</p>
-
-
-                        <p class="card-text">Au programme: <br>Snorkeling , visite des Calanques et Farniente !</p>
-
-
-                        <i class="fa-solid fa-location-dot fa-xl" style="color: #f28132;"></i>
-
-
-                        <p class="card-text">Au Départ <br>Bandol / St Cyr Sur Mer / La Ciotat</p>
-                        <p class="card-text">
-                        <ul class="list-group ">
-                            <li class="list-group">De 9h à 16h</li>
-                            <li class="list-group">Max 12 pers.</li>
-                            <li class="list-group  ">Skipper inclus</li>
-                            <li class="list-group pt-1 "> A partir de : 800E* </li>
-                        </ul>
-                        </p>
-                        <button type="button" class="btn btn-info btn-sm">Small button</button>
-
-
-                    </div>
-                    <div class="card-footer ">
-                        <small class="text-body-secondary">*carburant non inclus</small>
-                    </div>
-                    <div class="card-footer ">
-                        <small class="text-body-secondary">Pour les excursions " A la carte" veuillez nous contacter
-                            directement</small>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 d-flex justify-content-center pt-3">
-                <div class="card w-75 h-100 text-center ">
-                    <img src="./images/360123975_254416417350513_4226228601286731345_n.jpg" class="card-img-top img-thumbnail"
-                        alt="okhlih">
-                    <div class="card-body ">
-                        <p class="card-title">Demi-Journée</p>
-                        <p class="card-text">Notre excursion d'une demi-journée est véritablement l'une des meilleures
-                            opportunités pour découvrir le littoral. Immergez-vous dans la beauté d'une crique préservée
-                            et kiffez a fond.</p>
-                        <p class="card-text">Au programme: <br>
-                            Snorkeling , visite des Calanques et Farniente ! </p>
-
-
-                        <i class="fa-solid fa-location-dot fa-xl" style="color: #f28132;"></i>
-
-
-                        <p class="card-text">Au Départ <br>Bandol / St Cyr Sur Mer / La Ciotat</p>
-                        <p class="card-text">
-                        <ul class="list-group ">
-                            <li class="list-group">Matinée de 9h à 13h</li>
-                            <li class="list-group">Après-midi de 14h à 18h</li>
-                            <li class="list-group">Max 12 pers.</li>
-                            <li class="list-group">Skipper inclus</li>
-                            <li class="list-group pt-1">A partir de : 650E* </li>
-                        </ul>
-
-
-                        </p>
-                        <button type="button" class="btn btn-info btn-sm">Small button</button>
-                    </div>
-                    <div class="card-footer">
-                        <small class="text-body-secondary">*carburant non inclus</small>
-                    </div>
-                    <div class="card-footer ">
-                        <small class="text-body-secondary">Pour les excursions " A la carte" veuillez nous contacter
-                            directement</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
- -->
+        -->
 
 
     <!-- end exursion -->
 
     <!-- reservation -->
-    <div class="container-fluid ">
+    <div class="container-fluid " id="Reservation">
         <div class="row">
             <div class="col-lg-12">
                 <h3>Réservation</h3>
@@ -408,7 +455,7 @@
     <!-- end reservation -->
 
     <!-- galerie -->
-    <div class="container-fluid my-5 ">
+    <div class="container-fluid my-5" id="Galerie">
         <div class="row">
             <div class="col-lg-12">
                 <h4>Galerie</h4>
@@ -569,7 +616,7 @@
     <!-- end galery -->
 
     <!-- contact -->
-    <div class="container-fluid container-contact py-5">
+    <div class="container-fluid container-contact py-5" id="Contact">
         <div class="row">
             <!-- Formulaire de contact -->
             <div class="col-lg-6 mb-5 mb-lg-0 ps-5">
@@ -580,8 +627,8 @@
                         <input type="text" class="form-control" id="name" required>
                     </div>
                     <div class="mb-3">
-                        <label for="email" class="form-label">Adresse Email</label>
-                        <input type="email" class="form-control" id="email" required>
+                        <label for="email2" class="form-label">Adresse Email</label>
+                        <input type="email" class="form-control" id="email2" required>
                     </div>
                     <div class="mb-3">
                         <label for="phone" class="form-label">Téléphone</label>
@@ -602,9 +649,12 @@
                         <h5 class="card-title">Coordonnées</h5>
                         <p class="card-text">Vous pouvez nous contacter aux coordonnées suivantes :</p>
                         <ul class="list-unstyled">
-                            <li class="fw-semibold">Adresse:</li> <p>410c chemin de la croix des signaux, <br>83740 La Cadière-d'Azur, France</p>
-                            <li class="fw-semibold" >Téléphone:</li><p>+33 (0)6 17 35 28 37</p> 
-                            <li class="fw-semibold">Email:</li> <p>skipperservicebsm@gmail.com</p>
+                            <li class="fw-semibold">Adresse:</li>
+                            <p>410c chemin de la croix des signaux, <br>83740 La Cadière-d'Azur, France</p>
+                            <li class="fw-semibold">Téléphone:</li>
+                            <p>+33 (0)6 17 35 28 37</p>
+                            <li class="fw-semibold">Email:</li>
+                            <p>skipperservicebsm@gmail.com</p>
                         </ul>
                     </div>
                     <!-- Emplacement pour le QR code -->
@@ -639,7 +689,8 @@
 
     <div class="content text-center">
         <p class="text center card-title"> Skipper Service</p>
-     </div>
+        <a href="#" class="back-to-top">Haut de page</a>
+    </div>
 
     <footer class="footer mt-2  text-light">
         <div class="container-fluid ">
@@ -648,18 +699,22 @@
                 <div class="col-md-3">
                     <p class="fs-2 ">Contact</p>
                     <ul class="list-unstyled text-start ps-5 pt-2">
-                        <li><i class="fa-brands fa-whatsapp fa-xl" style="color: #f5f7f6;"></i> +33 (0)6 17 35 28 37</li>
-                        <li><i class="fa-regular fa-envelope fa-xl" style="color: #f5f7f6;"></i> skipperservicebsm@gmail.com</li>
-                        <li><i class="fa-solid fa-location-dot fa-xl "></i> 410c chemin de la croix des signaux <br>83740 La Cadière-d'Azur, France </li>
+                        <li><i class="fa-brands fa-whatsapp fa-xl" style="color: #f5f7f6;"></i> +33 (0)6 17 35 28 37
+                        </li>
+                        <li><i class="fa-regular fa-envelope fa-xl" style="color: #f5f7f6;"></i>
+                            skipperservicebsm@gmail.com</li>
+                        <li><i class="fa-solid fa-location-dot fa-xl "></i> 410c chemin de la croix des signaux
+                            <br>83740 La Cadière-d'Azur, France
+                        </li>
                     </ul>
                 </div>
                 <!-- Section Liens Utiles -->
                 <div class="col-md-3">
                     <p class="fs-2">Liens Utiles</p>
                     <ul class="list-unstyled text-start ps-5 pt-2 ">
-                        <li><a href="#">Conditions d'utilisation</a></li>
-                        <li><a href="#">Politique de confidentialité</a></li>
-                        <li><a href="#">FAQ</a></li>
+                        <li><a href="cu.html">Conditions d'utilisation</a></li>
+                        <li><a href="pdc.html">Politique de confidentialité</a></li>
+                        <li><a href="faq.html">FAQ</a></li>
                     </ul>
                 </div>
                 <!-- Section Nos Partenaires -->
@@ -675,27 +730,34 @@
                 <div class="col-md-3">
                     <p class="fs-2">Réseaux Sociaux</p>
                     <div class="col pt-3">
-                        <i class="fa-brands fa-facebook fa-2xl p-2" style="color: #f5f7f6;"></i>
-                        <i class="fa-brands fa-instagram fa-2xl p-2" style="color: #f5f7f6;"></i>
+                        <a href="https://www.facebook.com/Skipperservicebsm/"><i class="fa-brands fa-facebook fa-2xl p-2"  style="color: #f5f7f6;"></i></a>
+                        <a href="https://www.instagram.com/skipperservice?utm_source=qr&igsh=ZTM4ZDRiNzUwMw=="><i class="fa-brands fa-instagram fa-2xl p-2" style="color: #f5f7f6;"></i></a>
                         <i class="fa-brands fa-youtube fa-2xl p-2" style="color: #f5f7f6;"></i>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </footer>
     <!-- end footer -->
 
 
-    
+
 
     <script src="main.js"></script>
     <script src="serpapi_query.js"></script>
     <script src="excursion.js"></script>
-    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
     <!-- api -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/serpapi/dist/serpapi.js"></script>
+    <script
+        src="https://maps.googleapis.com/maps/api/js?key=12d0553907cfeb9f0312a000322e34a487a142660a6dac61feea1b39a6843820&callback=initMap"
+        async defer>
+        </script>
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
 
 
 </body>
