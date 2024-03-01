@@ -11853,10 +11853,15 @@ textarea.form-control-lg {
   color: #F5F7F6;
 }
 
-h2, .h2, h3, .h3, h4, .h4 {
+.modal-link {
+  font-family: "News Cycle", sans-serif;
+  color: #F5F7F6;
+}
+
+h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-family: "Kaushan Script", cursive;
   color: #F28132;
-  font-size: 60px;
+  font-size: 40px;
 }
 
 .alex {
@@ -11905,30 +11910,25 @@ p, li, a {
   background-color: #e27e37;
 }
 
-.bg-img-about {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  width: 100%;
+.container-about {
+  background-color: #456D92;
   min-height: 100vh;
 }
 
-.container-about {
-  background-color: #456D92;
-}
-
 .content {
-  margin-top: 50px;
-  padding: 20px;
+  margin-top: 20px;
+  padding: 10px;
   background-color: #F5F7F6;
   border-radius: 5px;
 }
 
 .photo-section1 {
-  margin-top: 30px;
   text-align: center;
-  width: 500px;
+  width: 300px;
+}
+
+.container-excursion {
+  min-height: 100vh;
 }
 
 .card {
@@ -11981,7 +11981,7 @@ p, li, a {
 }
 
 .container-reservation {
-  max-width: 1300px;
+  width: 900px;
   background-color: #93B2CA;
 }
 

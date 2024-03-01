@@ -6,7 +6,6 @@
 // nav-bar
 
 .navbar {
-    // background-color: map-get($theme-colors, "bluedark");
 
 background-color: #456D92;
 }
@@ -14,28 +13,31 @@ background-color: #456D92;
 
 
 .nav-link, .navbar-brand, .h1 {
-    // font-family: "telemarine1",sans-serif;
-    font-family:"Kaushan Script", cursive;
-    // color: map-get($theme-colors, "white");
-    color: #F5F7F6;
+   font-family:"Kaushan Script", cursive;
+   color: #F5F7F6;
 }
 
-h2, h3, h4  {
+.modal-link{
+  font-family: "News Cycle", sans-serif;
+  color: #F5F7F6;
+  
+}
+
+h2, h3, h4, h5, h6 {
   font-family:"Kaushan Script", cursive;
   color: #F28132;
-  font-size: 60px;
+  font-size: 40px;
 }
 .alex{
   font-family:"Kaushan Script", cursive;
-  
-  color: #F5F7F6;
+   color: #F5F7F6;
 }
 
 
    
 
 .login, .navbar-toggler {
-    // color: map-get($theme-colors, "white");
+    
     color: #F5F7F6;
 }
 
@@ -98,25 +100,26 @@ p, li, a{
 // a propos
 
 
-.bg-img-about{
-background-position: center;
-background-repeat: no-repeat;
-background-size: cover;
-background-attachment: fixed;
-width: 100%;
-min-height: 100vh;
-}
+// .bg-img-about{
+// background-position: center;
+// background-repeat: no-repeat;
+// background-size: cover;
+// background-attachment: fixed;
+// width: 100%;
+// min-height: 100vh;
+// }
 
   
 //  
 
 .container-about{
     background-color: #456D92;
+    min-height: 100vh;
 
 }
   .content {
-    margin-top: 50px;
-    padding: 20px;
+    margin-top: 20px;
+    padding: 10px;
     background-color: #F5F7F6; 
     border-radius: 5px;
     
@@ -125,9 +128,8 @@ min-height: 100vh;
   
   
   .photo-section1 {
-    margin-top: 30px;
-    text-align: center;
-    width: 500px;
+   text-align: center;
+   width: 300px;
   }
 
 
@@ -136,6 +138,10 @@ min-height: 100vh;
 
 
 // excursion
+
+.container-excursion{
+  min-height: 100vh;
+}
 
 
 .card {
@@ -191,7 +197,8 @@ font-size: 0.9rem;
 
 // reservation
 .container-reservation {
-   max-width: 1300px;
+   width: 900px;
+   
    background-color: #93B2CA;
     
   }
