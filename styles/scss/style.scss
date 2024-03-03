@@ -2,19 +2,17 @@
 @import "_variable.scss";
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
-
 // nav-bar
 
 .navbar {
-
 background-color: #456D92;
 }
     
 
 
 .nav-link, .navbar-brand, .h1 {
-   font-family:"Kaushan Script", cursive;
-   color: #F5F7F6;
+  font-family:"Kaushan Script", cursive;
+  color: #F5F7F6;
 }
 
 .modal-link{
@@ -28,29 +26,14 @@ h2, h3, h4, h5, h6 {
   color: #F28132;
   font-size: 40px;
 }
-.alex{
-  font-family:"Kaushan Script", cursive;
-   color: #F5F7F6;
-}
-
-
-   
 
 .login, .navbar-toggler {
-    
-    color: #F5F7F6;
+  color: #F5F7F6;
 }
 
 .login{
-padding-left: 200px;
+  padding-left: 200px;
 }
-
-.logo{
-  width: 100px;
-  
-}
-
-
 
 // end nav-bar 
 
@@ -71,11 +54,14 @@ min-height: 100vh;
 }
 
 
-p, li, a{
+li, a{
   font-family: "News Cycle", sans-serif;
 }
 
-
+.alex{
+  font-family:"Kaushan Script", cursive;
+  color: #F5F7F6;
+}
 
 .btn {
 
@@ -114,9 +100,8 @@ p, li, a{
 
 .container-about{
     background-color: #456D92;
-    min-height: 100vh;
+    }
 
-}
   .content {
     margin-top: 20px;
     padding: 10px;
@@ -125,11 +110,9 @@ p, li, a{
     
   }
   
-  
-  
-  .photo-section1 {
+  .img-fluid {
    text-align: center;
-   width: 300px;
+   width: 350px;
   }
 
 
@@ -137,12 +120,59 @@ p, li, a{
 // end propos
 
 
+// api
+gmp-map {
+  height: 100%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Optional: Makes the sample page fill the window. */
+// html,
+// body {
+//   height: 100%;
+//   margin: 0;
+//   padding: 0;
+// }
+
+// end api
+
 // excursion
 
 .container-excursion{
   min-height: 100vh;
 }
 
+.flt-excursion{
+  background-color: #456D92;
+}
+
+.row-excursion{
+  background-color: #9FBED1;
+}
+
+.btn-excursion{
+  display: inline-block;
+  background-color:  #93B2CA,;
+  color: #F5F7F6 ;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "News Cycle", sans-serif;
+  
+}
+
+.btn-excursion:hover {
+  background-color:  #9FBED1,;
+}
 
 .card {
     transition: transform 0.2s;
@@ -197,9 +227,12 @@ font-size: 0.9rem;
 
 // reservation
 .container-reservation {
- 
-   
-   background-color: #93B2CA;
+   background-color: #F5F7F6;
+    min-height: 100vh;
+  }
+  
+  .container-formulaire{
+    background-color:  #93B2CA;
     
   }
   

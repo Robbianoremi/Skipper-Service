@@ -1,7 +1,10 @@
+
+
+
 // button back up
 
 // Sélectionnez le bouton de retour en haut de la page
-var backToTopButton = document.querySelector('.back-to-top');
+var backToTopButton = document.querySelector('.back-to-top ');
 
 // Ajoutez un événement de défilement pour surveiller le défilement de la page
 window.addEventListener('scroll', function() {

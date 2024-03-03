@@ -11864,21 +11864,12 @@ h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   font-size: 40px;
 }
 
-.alex {
-  font-family: "Kaushan Script", cursive;
-  color: #F5F7F6;
-}
-
 .login, .navbar-toggler {
   color: #F5F7F6;
 }
 
 .login {
   padding-left: 200px;
-}
-
-.logo {
-  width: 100px;
 }
 
 .bg-img-acceuil {
@@ -11890,8 +11881,13 @@ h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   min-height: 100vh;
 }
 
-p, li, a {
+li, a {
   font-family: "News Cycle", sans-serif;
+}
+
+.alex {
+  font-family: "Kaushan Script", cursive;
+  color: #F5F7F6;
 }
 
 .btn {
@@ -11912,7 +11908,6 @@ p, li, a {
 
 .container-about {
   background-color: #456D92;
-  min-height: 100vh;
 }
 
 .content {
@@ -11922,13 +11917,50 @@ p, li, a {
   border-radius: 5px;
 }
 
-.photo-section1 {
+.img-fluid {
   text-align: center;
-  width: 300px;
+  width: 350px;
 }
 
+gmp-map {
+  height: 100%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Optional: Makes the sample page fill the window. */
 .container-excursion {
   min-height: 100vh;
+}
+
+.flt-excursion {
+  background-color: #456D92;
+}
+
+.row-excursion {
+  background-color: #9FBED1;
+}
+
+.btn-excursion {
+  display: inline-block;
+  background-color: #93B2CA;
+  color: #F5F7F6;
+  padding: 10px 20px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: "News Cycle", sans-serif;
+}
+
+.btn-excursion:hover {
+  background-color: #9FBED1;
 }
 
 .card {
@@ -11981,6 +12013,11 @@ p, li, a {
 }
 
 .container-reservation {
+  background-color: #F5F7F6;
+  min-height: 100vh;
+}
+
+.container-formulaire {
   background-color: #93B2CA;
 }
 

@@ -35,9 +35,18 @@ function afficherExcursions(excursions) {
       const card = document.createElement("div");
       card.classList.add("card");
       card.innerHTML = `
-              <h2>${excursion.lieu}</h2>
+              <p class="card-title">${excursion.lieu}</p>
               <p>Durée: ${excursion.duree}</p>
               <p>Prix: ${excursion.prix}€</p>
+              <button type="button" class="btn  btn-sm w-25">Small button</button>
+
+
+
+
+              
+
+
+              
           `;
       excursionsContainer.appendChild(card);
     });
