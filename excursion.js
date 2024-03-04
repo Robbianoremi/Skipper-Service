@@ -8,7 +8,7 @@ const excursionsContainer = document.getElementById("excursions");
 
 
 document.addEventListener("DOMContentLoaded", function () {
-  // Données d'excursions (vous pouvez les remplacer par vos propres données)
+ 
   const excursionsData = [
     { lieu: "Bandol", duree: "Demi-journée / Matinée", prix: 650 },
     { lieu: "Bandol", duree: "Demi-journée / Après-midi", prix: 650 },
@@ -60,7 +60,7 @@ function afficherExcursions(excursions) {
   
     if (lieu == "") {
       excursionsContainer.innerHTML = ""; 
-      return; // Rien ne correspond si toutes les valeurs sont vides
+      return; 
     }
   
     let excursionsFiltrees = excursionsData.filter((excursion) => {
@@ -74,7 +74,7 @@ function afficherExcursions(excursions) {
     afficherExcursions(excursionsFiltrees);
   }
 
-  // Afficher les excursions au chargement de la page
+ 
   
 
   // Écouter les changements dans les filtres et filtrer les excursions en conséquence
