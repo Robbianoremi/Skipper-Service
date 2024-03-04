@@ -86,18 +86,6 @@ li, a{
 // a propos
 
 
-// .bg-img-about{
-// background-position: center;
-// background-repeat: no-repeat;
-// background-size: cover;
-// background-attachment: fixed;
-// width: 100%;
-// min-height: 100vh;
-// }
-
-  
-//  
-
 .container-about{
     background-color: #456D92;
     }
@@ -125,28 +113,14 @@ gmp-map {
   height: 100%;
 }
 
-/* Optional: Makes the sample page fill the window. */
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-/* Optional: Makes the sample page fill the window. */
-// html,
-// body {
-//   height: 100%;
-//   margin: 0;
-//   padding: 0;
-// }
 
 // end api
 
 // excursion
 
 .container-excursion{
-  min-height: 100vh;
+  min-height: 100;
+  
 }
 
 .flt-excursion{
@@ -181,21 +155,20 @@ body {
     transform: scale(1.05);
   }
   .card-img-top {
-    height: 250px; /* Ajuster la hauteur de l'image */
+    height: 250px; 
     object-fit: cover;
   }
   .card-title {
-    color: #456D92; /* Couleur du titre */
+    color: #456D92; 
     font-family:"Kaushan Script", cursive;
     font-size: 40px;
 
   }
 
-
 .excursion-card {
 border: none;
-background-color: #456D92; /* Couleur de fond */
-color: #F5F7F6; /* Couleur du texte */
+background-color: #456D92; 
+color: #F5F7F6; 
 transition: transform 0.3s ease-in-out; /* Animation de transition */
 }
 
@@ -206,8 +179,7 @@ transform: translateY(-5px); /* Animation de survol */
 .excursion-card img {
 width: 100%;
 height: auto;
-border-top-left-radius: 5px; /* Arrondi en haut à gauche */
-border-top-right-radius: 5px; /* Arrondi en haut à droite */
+
 }
 
 .excursion-card .card-body {
@@ -215,7 +187,7 @@ padding: 1.5rem;
 }
 
 .excursion-card h5 {
-color: #F28132; /* Couleur du titre */
+color: #F28132; 
 }
 
 .excursion-card p {
