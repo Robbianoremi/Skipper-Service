@@ -6,10 +6,10 @@
 
      function initMap() {
         // Coordonnées de l'emplacement
-        var myLatLng = {lat: 43.16703414916992, lng: 5.597321033477783};
+        let myLatLng = {lat: 43.16703414916992, lng: 5.597321033477783};
 
         // Récupérer l'élément contenant la carte
-        var mapElement = document.getElementById('map');
+        let mapElement = document.getElementById('map');
 
         // Vérifier si l'élément est trouvé
         if (mapElement) {
@@ -20,7 +20,7 @@
           });
 
           // Créer un marqueur pour l'emplacement spécifié
-          var marker = new google.maps.Marker({
+          let marker = new google.maps.Marker({
             position: myLatLng,
             map: map,
             title: 'My location'

@@ -38,7 +38,7 @@ function afficherExcursions(excursions) {
               <p class="card-title">${excursion.lieu}</p>
               <p>Durée: ${excursion.duree}</p>
               <p>Prix: ${excursion.prix}€</p>
-              <button type="button" class="btn  btn-sm w-25">Small button</button>
+             
 
 
 

@@ -196,14 +196,7 @@
                 </div>
             </div>
         </div>
-        <div id="map"></div>
-
-        <div class="map">
-            <gmp-map center="43.16703414916992,5.597321033477783" zoom="14" map-id="DEMO_MAP_ID">
-                <gmp-advanced-marker position="43.16703414916992,5.597321033477783"
-                    title="My location"></gmp-advanced-marker>
-            </gmp-map>
-        </div>
+       
 
     </div>
 
@@ -211,16 +204,23 @@
 
     <!-- api -->
 
+    <div id="map"></div>
 
+    <div class="map">
+        <gmp-map center="43.16703414916992,5.597321033477783" zoom="14" map-id="DEMO_MAP_ID">
+            <gmp-advanced-marker position="43.16703414916992,5.597321033477783"
+                title="My location"></gmp-advanced-marker>
+        </gmp-map>
+    </div>
     <!-- api -->
 
     <!-- excursion -->
 
 
 
-    <div class="container-fluid container-excursion py-5 " id="Excursion">
+    <div class="container-fluid container-excursion px-5 py-5 " id="Excursion">
 
-        <div class="row row-excursion py-3 p-3 rounded">
+        <div class="row row-excursion py-3 px-5 p-3 rounded">
             <h3 class="mb-2">Nos Excursions</h3>
             <div class="filters flt-excursion p-2 border border-2 rounded shadow">
                 <label for="lieu" class=" text-light
@@ -508,7 +508,7 @@
     <!-- end reservation -->
 
     <!-- galerie -->
-    <div class="container-fluid my-5" id="Galerie">
+    <div class="container-fluid container-galerie my-5" id="Galerie">
         <div class="row">
             <div class="col-lg-12">
                 <h5>Galerie</h5>
@@ -518,7 +518,7 @@
             <div class="col-lg-4">
 
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
-                    <!-- Galerie d'images -->
+                   
                     <div class="col">
                         <div class="gallery-item">
                             <img src="./images/35657.jpg" class="img-fluid" alt="Image 1">
@@ -559,7 +559,7 @@
                             <img src="./images/35657.jpg" class="img-fluid" alt="Image 3">
                         </div>
                     </div>
-                    <!-- Ajoutez plus d'images si nécessaire -->
+                  
                 </div>
             </div>
 
@@ -807,7 +807,7 @@
 
 
     <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key= AIzaSyD4LJPVI3mK7kWobpbNcczAFedU2MEFy68&callback=initMap&libraries=maps,marker&v=beta"></script>
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4LJPVI3mK7kWobpbNcczAFedU2MEFy68&callback=initMap&libraries=maps,marker&v=beta"></script>
 
 
 </body>
