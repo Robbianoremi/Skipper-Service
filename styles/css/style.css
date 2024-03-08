@@ -11848,7 +11848,11 @@ textarea.form-control-lg {
   background-color: #456D92;
 }
 
-.nav-link, .navbar-brand, .h1 {
+.h1 {
+  font-size: 80px;
+}
+
+.h1, .nav-link, .navbar-brand {
   font-family: "Kaushan Script", cursive;
   color: #F5F7F6;
 }
@@ -11881,7 +11885,12 @@ h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6 {
   min-height: 100vh;
 }
 
-li, a {
+.row-title {
+  padding-top: 170px;
+}
+
+.row-button li,
+a {
   font-family: "News Cycle", sans-serif;
 }
 
@@ -11919,24 +11928,19 @@ li, a {
 
 .img-fluid {
   text-align: center;
-  width: 350px;
+  width: 345px;
+}
+
+.photo-section1 {
+  margin-top: 40px;
 }
 
 gmp-map {
   height: 100%;
 }
 
-/* Optional: Makes the sample page fill the window. */
-html,
-body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-/* Optional: Makes the sample page fill the window. */
 .container-excursion {
-  min-height: 100vh;
+  min-height: 100;
 }
 
 .flt-excursion {
@@ -11972,20 +11976,20 @@ body {
 }
 
 .card-img-top {
-  height: 250px; /* Ajuster la hauteur de l'image */
+  height: 250px;
   object-fit: cover;
 }
 
 .card-title {
-  color: #456D92; /* Couleur du titre */
+  color: #456D92;
   font-family: "Kaushan Script", cursive;
   font-size: 40px;
 }
 
 .excursion-card {
   border: none;
-  background-color: #456D92; /* Couleur de fond */
-  color: #F5F7F6; /* Couleur du texte */
+  background-color: #456D92;
+  color: #F5F7F6;
   transition: transform 0.3s ease-in-out; /* Animation de transition */
 }
 
@@ -11996,8 +12000,6 @@ body {
 .excursion-card img {
   width: 100%;
   height: auto;
-  border-top-left-radius: 5px; /* Arrondi en haut à gauche */
-  border-top-right-radius: 5px; /* Arrondi en haut à droite */
 }
 
 .excursion-card .card-body {
@@ -12005,7 +12007,7 @@ body {
 }
 
 .excursion-card h5, .excursion-card .h5 {
-  color: #F28132; /* Couleur du titre */
+  color: #F28132;
 }
 
 .excursion-card p {
@@ -12014,7 +12016,7 @@ body {
 
 .container-reservation {
   background-color: #F5F7F6;
-  min-height: 100vh;
+  min-height: 80vh;
 }
 
 .container-formulaire {
@@ -12023,6 +12025,11 @@ body {
 
 .form-group {
   margin-bottom: 1.5rem;
+}
+
+.container-galerie {
+  min-height: 40vh;
+  background-color: #456D92;
 }
 
 .carousel-dark {

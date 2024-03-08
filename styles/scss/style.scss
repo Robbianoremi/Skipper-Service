@@ -9,8 +9,14 @@ background-color: #456D92;
 }
     
 
+.h1{
+  font-size: 80px;
+}
 
-.nav-link, .navbar-brand, .h1 {
+.nav-link{
+  
+}
+.h1, .nav-link, .navbar-brand {
   font-family:"Kaushan Script", cursive;
   color: #F5F7F6;
 }
@@ -53,7 +59,14 @@ min-height: 100vh;
 
 }
 
+.row-title{
+  padding-top: 170px;
+}
+  .btn-home {
+    // padding-left: 100xx;
+  }
 
+.row-button
 li, a{
   font-family: "News Cycle", sans-serif;
 }
@@ -100,9 +113,12 @@ li, a{
   
   .img-fluid {
    text-align: center;
-   width: 350px;
+   width: 345px;
+   
   }
-
+  .photo-section1 {
+    margin-top: 40px;
+  }
 
 
 // end propos
@@ -201,7 +217,7 @@ font-size: 0.9rem;
 // reservation
 .container-reservation {
    background-color: #F5F7F6;
-    min-height: 100vh;
+    min-height: 80vh;
   }
   
   .container-formulaire{
@@ -215,6 +231,11 @@ font-size: 0.9rem;
 // end reservation
 
 // galerie
+
+.container-galerie{
+  min-height: 40vh;
+  background-color: #456D92;
+}
 
 .carousel-dark {
  width: 700px;
